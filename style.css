@@ -54,11 +54,34 @@ section {
 .hero {
   background: url('./images/bg-header-desktop.png') no-repeat top center/cover;
   padding: 6rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.hero .logo {
+/* .hero .logo {
+  display: flex;
   width: 100px;
   margin-bottom: 2rem;
+  
+} */
+ .hero .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 2rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(16, 24, 40, 0.08);
+}
+
+.hero .logo img {
+  width: 60%;
+  height: auto;
+  display: block;
 }
 
 .hero h1 {
